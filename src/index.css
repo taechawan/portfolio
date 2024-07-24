@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headName {
+  font-family: "Poppins"!important;
+  font-size: 50px!important;
+  color: #E5E7E9!important;
+}
+
+.headText {
+  font-family: "Poppins"!important;
+  font-size: 30px!important;
+  color: #E5E7E9!important;
+}
+
+.headText2 {
+  font-family: "Poppins"!important;
+  font-size: 20px!important;
+  color: #E5E7E9!important;
+}
