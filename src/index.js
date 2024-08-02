@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 import Home from "./home";
 import Resume from "./resume";
 import Transcript from "./transcript";
@@ -16,7 +16,7 @@ import DB from "./DB";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route>
         <Route path="/" element={<Home />} />
@@ -31,10 +31,13 @@ root.render(
         <Route path="/DB" element={<DB />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages
+//https://medium.com/@swarajgosavi20/how-to-deploy-react-app-with-client-side-routing-on-github-pages-8a3fefe5b0d5
