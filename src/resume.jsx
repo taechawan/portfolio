@@ -37,7 +37,7 @@ const theme = createTheme({
 
 function Resume() {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
-  const pdfUrl = "/RESUME_Taechawan.pdf";
+  const pdfUrl = `${process.env.PUBLIC_URL}/RESUME_Taechawan.pdf`;
   return (
     <Fragment>
       <ThemeProvider theme={theme}>

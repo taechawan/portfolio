@@ -37,7 +37,8 @@ const theme = createTheme({
 
 function transcript() {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
-  const pdfUrl = "/transcript.pdf";
+  const pdfUrl = `${process.env.PUBLIC_URL}/transcript.pdf`;
+
   return (
     <Fragment>
       <ThemeProvider theme={theme}>

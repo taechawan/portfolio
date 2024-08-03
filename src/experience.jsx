@@ -11,6 +11,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
@@ -34,6 +35,7 @@ const theme = createTheme({
 });
 
 function Experience() {
+  const navigate = useNavigate();
   return (
     <Fragment>
       <ThemeProvider theme={theme}>
@@ -66,10 +68,7 @@ function Experience() {
                         padding: "15px",
                         height: "auto",
                       }}>
-                      <CardActionArea
-                        onClick={() => {
-                          window.location.href = "/cooperative";
-                        }}>
+                      <CardActionArea onClick={() => navigate("/cooperative")}>
                         <CardMedia
                           component="img"
                           height="250"
@@ -102,10 +101,7 @@ function Experience() {
                         padding: "15px",
                         height: "auto",
                       }}>
-                      <CardActionArea
-                        onClick={() => {
-                          window.location.href = "/graduation";
-                        }}>
+                      <CardActionArea onClick={() => navigate("/graduation")}>
                         <CardMedia
                           component="img"
                           height="100%"
@@ -147,10 +143,7 @@ function Experience() {
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={4}>
                     <Card sx={{ bgcolor: "#2E4053", padding: "15px" }}>
-                      <CardActionArea
-                        onClick={() => {
-                          window.location.href = "/SA";
-                        }}>
+                      <CardActionArea onClick={() => navigate("/SA")}>
                         <CardContent>
                           <Typography className="headText2">
                             System Analysis and Design
@@ -169,10 +162,7 @@ function Experience() {
                   </Grid>
                   <Grid item xs={12} md={4}>
                     <Card sx={{ bgcolor: "#2E4053", padding: "15px" }}>
-                      <CardActionArea
-                        onClick={() => {
-                          window.location.href = "/DB";
-                        }}>
+                      <CardActionArea onClick={() => navigate("/DB")}>
                         <CardContent>
                           <Typography className="headText2">
                             Introduction to Database Systems
@@ -191,10 +181,7 @@ function Experience() {
                   </Grid>
                   <Grid item xs={12} md={4}>
                     <Card sx={{ bgcolor: "#2E4053", padding: "15px" }}>
-                      <CardActionArea
-                        onClick={() => {
-                          window.location.href = "/IP";
-                        }}>
+                      <CardActionArea onClick={() => navigate("/IP")}>
                         <CardContent>
                           <Typography className="headText2">
                             Digital Image Processing
